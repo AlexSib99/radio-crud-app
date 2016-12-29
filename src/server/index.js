@@ -10,3 +10,7 @@ app.listen(3000, (err) => {
 
 var path = require('path');
 app.use('/static', path.join(__dirname, '..', 'client'));
+
+app.get('/list', (req, res) => {
+   res.send('List of radio releases');
+});
