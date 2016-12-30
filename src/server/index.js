@@ -7,7 +7,7 @@ var path = require('path');
 app.use('/static', express.static( path.join(__dirname, '..', 'client')) );
 
 app.get('/list', (req, res) => {
-   res.send('List of radio releases');
+   res.sendFile( path.join( __dirname, '..', 'views', 'list.html' ) );
 });
 
 app.listen(3000, (err) => {
