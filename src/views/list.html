@@ -38,7 +38,13 @@
       </div><!-- /.container-fluid -->
     </nav>
     <h1>List Page</h1>
-    <div ng-controller="listPageCtrl"></div>
+    <div ng-controller="listPageCtrl">
+      {{ userName }}
+      <button ng-click="changeUserName();">CHANGE</button>
+      <div>
+         <input ng-model="userName" />
+      </div>
+    </div>
     <script src="/static/list.js"></script>
 </body>
 </html>
