@@ -41,7 +41,11 @@
     <h1 class="h1 text-center">List Page</h1>
     <div ng-controller="listPageCtrl">
       {{ userName }}
-      <button ng-click="changeUserName();" type="button" class="btn btn-primary btn-sm">CHANGE</button>
+      <button ng-click="changeUserName();" type="button" class="btn btn-primary btn-sm">Click</button>
+      <button ng-mouseenter="userName='Maria';" type="button" class="btn btn-primary btn-sm">MouseEnter</button>
+      <button ng-mouseleave="userName='Alex';" type="button" class="btn btn-primary btn-sm">MouseLeave</button>
+      <button ng-mouseover="userName='Donald Trump';" type="button" class="btn btn-primary btn-sm">MouseOver</button>
+      <button ng-dblclick="userName='Mister X';" type="button" class="btn btn-primary btn-sm">DblClick</button>
       <div class="input-group">
         <span class="input-group-addon" id="basic-addon1">Enter your name:</span>
         <input ng-model="userName" / type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
