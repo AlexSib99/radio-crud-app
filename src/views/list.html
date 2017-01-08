@@ -56,6 +56,10 @@
           <li ng-repeat="num in numbers">{{ num }}</li>
        </ul>
     </div>
+    <div ng-init="someText = 'Семь плюс восемнадцать равно'; x = 7; y = 18">
+      {{ someText }}
+      {{ x + y }}
+    </div>
     <script src="/static/list.js"></script>
 </body>
 </html>
