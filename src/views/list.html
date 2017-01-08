@@ -51,6 +51,11 @@
         <input ng-model="userName" / type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
       </div>
     </div>
+    <div ng-controller="secondCtrl">
+       <ul>
+          <li ng-repeat="num in numbers">{{ num }}</li>
+       </ul>
+    </div>
     <script src="/static/list.js"></script>
 </body>
 </html>

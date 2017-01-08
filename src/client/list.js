@@ -7,3 +7,7 @@ app.controller('listPageCtrl', ['$scope', function ($scope) {
            $scope.userName = 'Barak Husain Abama';
        };
 }]);
+
+app.controller('secondCtrl', ['$scope', function ($scope) {
+    $scope.numbers = [3, 5, 6, 8, 0];
+}]);
