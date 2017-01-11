@@ -60,6 +60,16 @@
       {{ someText }}
       {{ x + y }}
     </div>
+    <div ng-init="car='http://s.auto.drom.ru/i24195/c/photos/fullsize/audi/a6/audi_a6_453409.jpg'">
+      <img ng-src="{{ car }}" />
+      <div>
+        <button ng-click="car='http://s.auto.drom.ru/i24195/c/photos/fullsize/audi/a6/audi_a6_453409.jpg';" type="button" class="btn btn-primary btn-sm">Audi</button>
+        <button ng-click="car='https://rg.ru/img/content/124/95/27/Renault_77421_ru_ru_850_d_850.jpg';" type="button" class="btn btn-primary btn-sm">Renault</button>
+        <button ng-click="car='https://img-c.drive.ru/models.large.main.images/4400/000/000/000/c3f/48d15ac132fcd209-main.jpg';" type="button" class="btn btn-primary btn-sm">BMW</button>
+        <button ng-click="car='http://s.auto.drom.ru/i24196/c/photos/fullsize/toyota/land_cruiser/toyota_land_cruiser_463489.jpg';" type="button" class="btn btn-primary btn-sm">Toyota</button>
+        <button ng-click="car='https://i.ytimg.com/vi/qG-ciyYK61U/maxresdefault.jpg';" type="button" class="btn btn-primary btn-sm">Simply the best car :)</button>
+      </div>
+    </div>
     <script src="/static/list.js"></script>
 </body>
 </html>
