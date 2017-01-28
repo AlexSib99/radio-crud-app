@@ -55,6 +55,18 @@
        <ul>
           <li ng-repeat="num in numbers">{{ num }}</li>
        </ul>
+
+      <table>
+          <thead class="text-capitalize">
+              <th ng-repeat="item in headers"> {{ item }} </th>
+          </thead>
+           <tbody>
+                  <tr ng-repeat="item in data">
+                       <td ng-repeat="(key, value) in item" ng-if="headers.indexOf( key ) !== -1"> {{ value }} </td>
+                  </tr>
+          </tbody>
+      </table>
+
     </div>
     <div ng-init="someText = 'Семь плюс восемнадцать равно'; x = 7; y = 18">
       {{ someText }}
@@ -70,6 +82,7 @@
         <button ng-click="car='https://i.ytimg.com/vi/qG-ciyYK61U/maxresdefault.jpg';" type="button" class="btn btn-primary btn-sm">Simply the best car :)</button>
       </div>
     </div>
+
     <script src="/static/list.js"></script>
 </body>
 </html>
