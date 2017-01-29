@@ -11,18 +11,26 @@ app.controller('listPageCtrl', ['$scope', function ($scope) {
 app.controller('secondCtrl', ['$scope', function ($scope) {
     $scope.numbers = [3, 5, 6, 8, 0];
 
-    $scope.headers = ['name', 'address', 'phone'];
+    $scope.headers = ['name', 'address', 'phone', 'email'];
 
     $scope.data = [
        {
            name: 'John',
-           address: 'some street',
-           phone: '111-222-333'
+           address: 'Some street',
+           phone: '111-222-333',
+           email: 'john@xyz.com'
         },
         {
             name: 'Alex',
-            address: 'another street',
-            phone: '999-999-999'
+            address: 'Another street',
+            phone: '999-999-999',
+            email: 'mail@abc.net'
+        },
+        {
+          name: 'Mary',
+          address: 'Unknown',
+          phone: '123-456-789',
+          email: 'mary@abc.net'
         }
     ];
 }]);
