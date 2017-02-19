@@ -7,8 +7,6 @@ app.controller('listPageCtrl', ['$scope', '$http', function($scope, $http) {
            $scope.userName = 'Barak Husain Abama';
        };
 
-    $scope.apiCard = {};
-
         $scope.getCard = function () {
 
              $http.post('http://localhost:8080/api/card')
@@ -22,6 +20,7 @@ app.controller('listPageCtrl', ['$scope', '$http', function($scope, $http) {
                     });
 
         };
+}]);
 
 app.controller('secondCtrl', ['$scope', function ($scope) {
     $scope.numbers = [3, 5, 6, 8, 0];
